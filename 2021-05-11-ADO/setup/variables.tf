@@ -1,12 +1,13 @@
 variable "ado_org_service_url" {
   type        = string
   description = "Org service url for Azure DevOps"
+  # default     = "https://dev.azure.com/jan0825/MD2"
 }
 
 variable "ado_github_repo" {
   type        = string
   description = "Name of the repository in the format <GitHub Org>/<RepoName>"
-  default     = "ned1313/terraform-tuesdays"
+  default     = "JT-NL/terraform-tuesdays"
 }
 
 variable "ado_pipeline_yaml_path_1" {
@@ -29,7 +30,7 @@ variable "prefix" {
 
 variable "az_location" {
   type    = string
-  default = "eastus"
+  default = "westeurope"
 }
 
 variable "az_container_name" {
